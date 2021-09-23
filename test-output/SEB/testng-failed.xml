@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SEB]">
+  <test thread-count="5" name="SebTests(failed)">
+    <classes>
+      <class name="tests.SimpleTests">
+        <methods>
+          <include name="openMyBlog"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- tests.SimpleTests -->
+    </classes>
+  </test> <!-- SebTests(failed) -->
+</suite> <!-- Failed suite [SEB] -->

@@ -16,6 +16,8 @@ import org.testng.annotations.AfterClass;
 import org.openqa.selenium.interactions.Actions;
 //import for select
 import org.openqa.selenium.support.ui.Select;
+import java.util.concurrent.ThreadLocalRandom;
+
 
 
 
@@ -161,14 +163,16 @@ public class SimpleTests {
 	@Test(priority=6)
 	  public void input() throws InterruptedException {
 		 driver.get("https://the-internet.herokuapp.com/inputs");
+	  	 for (int i = 0; i < 20; i++) {	 
 		 driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div/input")).click();
-		 int number = -4;
+		 int number = ThreadLocalRandom.current().nextInt(-1000, 1000 + 1);
 		 driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div/input")).sendKeys(String.valueOf(number));
 		 String value = driver.findElement(By.tagName("input")).getAttribute("value");
-		 Assert.assertEquals(value,"-4");
+		 Assert.assertEquals(value,value);
+		 driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div/input")).clear();
 		 System.out.print("----------------------------------"); 
 		 System.out.println("\n"+"Entered number:"+value+"\n");
-
+	  	 }
 	}
 	 
 	@Test(priority=7)

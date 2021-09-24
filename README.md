@@ -27,7 +27,7 @@ I prefer Eclipse IDE so example is done using Eclipse
 - Dropdown, chosen option 1, Assert checks if option indeed was chosen, select value printed in console.
 - Dynamic loading, test waits until element is visible, as soon as it is visible assert is checked and tests continues.
 - Hower, chosen image printed in console, assert checks if value is visible during hover effect.
-- Input, in for loop user can chose how many random numbers will be checked, I chose 20, all used values are printed in console.
+- Input, in for loop user can chose how many random numbers will be checked. Numbers are generated from users chosen min and max values, all used values are printed in console.
 - ContextMenu, right-click functionality checked, alert automatically closed, console print out if alert was shown.
 
 

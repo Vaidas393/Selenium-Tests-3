@@ -22,7 +22,7 @@ I prefer Eclipse IDE so example is done using Eclipse
 - Tutorial: https://vimeo.com/489454435
 
 ## Additional comments:
-- Add/Remove test, inside for loop user can choose how many buttons will be added, in second loop number must be the same in order to delete all added buttons.
+- Add/Remove, inside for loop user can choose how many buttons will be added, in second loop number must be the same in order to delete all added buttons.
 - Checkboxes, number of checkboxes are automatically counted, check and uncheck functionality will be applied depending on number of checkboxes. Assert added to both checked and unchecked boxes. Without thread sleep runs to fast to notice changes.
 - Dropdown, chosen option 1, Assert checks if option indeed was chosen, select value printed in console.
 - Dynamic loading, test waits until element is visible, as soon as it is visible assert is checked and tests continues.
